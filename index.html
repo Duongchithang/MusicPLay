@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="" href="https://icons.iconarchive.com/icons/iynque/flat-ios7-style-documents/256/mp3-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>PlayMusic</title>
+</head>
+
+<body>
+    <div class="music">
+        <div class="music-img">
+            <img src="./img/img-2.jpg" id="Img-music" alt="">
+        </div>
+        <h3 class="music-namesong"></h3>
+        <h3 class="music-nameauthor"></h3>
+        <input type="range" class="music-play" name="song">
+        <audio src="./audio/love-yoursefl.mp3" id="song"></audio>
+        <div class="timer">
+            <div class="remanding">3:10</div>
+            <div class="duration">2:10</div>
+        </div>
+        <div class="icon-music">
+            <div class="replay"><i class="fas fa-retweet play-again"></i></div>
+            <div class="icon-prev"><i class="fas fa-backward"></i></div>
+            <div class="play"><i class="fas fa-play icon-play"></i></div>
+            <div class="icon-next"><i class="fas fa-forward"></i></div>
+            <div class="random"><i class="fas fa-random"></i></div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

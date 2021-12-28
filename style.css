@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --play-: #37C941;
+    --text-: #6666;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* display: none; */
+    height: 100vh;
+    background-size: cover;
+    background-image: url('https://tophinhanhdep.com/wp-content/uploads/2021/11/Rainbow-Gradient-Wallpapers-1024x512.jpg');
+}
+
+.music {
+    margin: 100px auto;
+    width: 500px;
+    height: 400px;
+    padding: 40px 30px 20px 30px;
+    background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 2px #ccc;
+}
+
+.music-img {
+    width: 90px;
+    height: 90px;
+    left: 50%;
+}
+
+.music-img.is-playing {
+    animation: around 3s infinite linear;
+}
+
+.music-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    border: 5px solid white;
+    box-shadow: 0 0 5px 5px #ccc;
+    object-fit: cover;
+    object-position: top;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #756e6e;
+}
+
+.music-play {
+    width: 300px;
+    margin-top: 20px;
+    height: 5px;
+    background-color: #756e6e;
+    -webkit-appearance: none;
+    /* Hides the slider so that custom slider can be made */
+    width: 100%;
+    /* Specific width is required for Firefox. */
+    background: transparent;
+    /* Otherwise white in Chrome */
+    margin-bottom: 10px;
+}
+
+.music-play::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background-color: #999;
+}
+
+.music-play::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #20e3b2;
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    box-shadow: 0 0 0 2px white, 0 0 0 5px rgba(100, 100, 111, 0.2);
+    margin-top: -4px;
+    cursor: pointer;
+}
+
+.music-namesong {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.music-nameauthor {
+    font-weight: 500;
+    color: black;
+    opacity: 0.6;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.icon-music {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+
+.icon-music i {
+    font-size: 20px;
+    color: #756e6e;
+    cursor: pointer;
+}
+
+.play {
+    padding: 10px 12px;
+    border: 10px solid #C7889D;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-music .icon-play {
+    transition: all 0.3s linear;
+}
+
+.play-again.active {
+    color: black;
+    transform: scale(1.2);
+}
+
+@keyframes around {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .music {
+        width: 350px;
+    }
+}
